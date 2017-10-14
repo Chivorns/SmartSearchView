@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SmartSearchView.iml" filepath="$PROJECT_DIR$/SmartSearchView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library-rxbinding/library-rxbinding.iml" filepath="$PROJECT_DIR$/library-rxbinding/library-rxbinding.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library-rxbinding-kotlin/library-rxbinding-kotlin.iml" filepath="$PROJECT_DIR$/library-rxbinding-kotlin/library-rxbinding-kotlin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sample/sample.iml" filepath="$PROJECT_DIR$/sample/sample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/smartsearchview/smartsearchview.iml" filepath="$PROJECT_DIR$/smartsearchview/smartsearchview.iml" />
+    </modules>
+  </component>
+</project>

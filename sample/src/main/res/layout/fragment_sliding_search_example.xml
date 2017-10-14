@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/header_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sliding_search_view_header_height"
+        android:background="#01579B" />
+
+    <FrameLayout
+        android:id="@+id/dim_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.chivorn.hum.smartsearchview.SmartSearchView
+            android:id="@+id/smsv_search_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:translationY="@dimen/sliding_search_view_header_height"
+            app:smsv_close_search_on_keyboard_dismiss="false"
+            app:smsv_dimBackground="false"
+            app:smsv_dismissOnOutsideTouch="true"
+            app:smsv_leftActionMode="showHamburger"
+            app:smsv_menu="@menu/menu_search_view"
+            app:smsv_searchBarMarginLeft="@dimen/search_view_inset"
+            app:smsv_searchBarMarginRight="@dimen/search_view_inset"
+            app:smsv_searchBarMarginTop="@dimen/search_view_inset"
+            app:smsv_searchHint="Search..."
+            app:smsv_showSearchKey="true"
+            app:smsv_suggestionsListAnimDuration="250" />
+    </FrameLayout>
+</RelativeLayout>
+

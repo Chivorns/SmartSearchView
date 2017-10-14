@@ -1,0 +1,57 @@
+apply plugin: 'com.android.library'
+
+ext {
+    // Library
+    LIBRARY_NAME = 'SmartSearchView'
+    PUBLISH_GROUP_ID = 'com.github.chivorns'
+    PUBLISH_ARTIFACT_ID = LIBRARY_NAME.toLowerCase()
+    PUBLISH_VERSION = '1.0.1'
+
+    // Bintray
+    BINTRAY_REPO = 'maven'
+    LIBRARY_DESC = 'Enable user to use searchview look like Google Play Store, search by voice , suggestion enable...'
+
+    // Github
+    GIT_REPO_URL = 'https://github.com/Chivorns/SmartSearchView'
+    GIT_VCS_URL  = GIT_REPO_URL + '.git'
+    GIT_USER_REPO_NAME= 'Chivorns/SmartSearchView'
+
+    // Developer Info
+    DEVELOPER_ID = 'chivorns'
+    DEVELOPER_NAME = 'Chivorn'
+    DEVELOPER_EMAIL = 'chivorn@live.com'
+
+    // Licence
+    LICENSE_NAME = 'The Apache Software License, Version 2.0'
+    LICENSE_URL = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    ALL_LICENSES = ["Apache-2.0"]
+}
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.2"
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 26
+        versionCode 1
+        versionName PUBLISH_VERSION
+    }
+}
+
+android {
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile "com.android.support:appcompat-v7:$support_version"
+    compile "com.android.support:recyclerview-v7:$support_version"
+    compile "com.android.support:design:$support_version"
+    compile "com.android.support:cardview-v7:$support_version"
+    compile 'com.bartoszlipinski:viewpropertyobjectanimator:1.2.0'
+}
+
+apply from: 'https://raw.githubusercontent.com/Chivorns/publish-android-library-plugin/master/publish_lib_v1.gradle'
