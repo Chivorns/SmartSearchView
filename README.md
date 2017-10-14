@@ -8,7 +8,7 @@ dependencies {
 }
 ```
 
-### Add SmartSearchSearchView to your layout:
+### Add SmartSearchView to your layout:
 
 ```xml
 <com.chivorn.hum.smartsearchview.SmartSearchView
@@ -24,5 +24,5 @@ dependencies {
         app:smsv_menu="@menu/search_menu"
         app:smsv_close_search_on_keyboard_dismiss="true"
         app:smsv_showVoiceInput="true">
-    </com.chivorn.hum.smartsearchview.SmartSearchView>
+</com.chivorn.hum.smartsearchview.SmartSearchView>
 ```
