@@ -364,7 +364,7 @@ public class SmartSearchView extends FrameLayout {
         mHostActivity = Util.getHostActivity(getContext());
 
         LayoutInflater layoutInflater = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        mMainLayout = inflate(getContext(), R.layout.floating_search_layout, this);
+        mMainLayout = inflate(getContext(), R.layout.smartsearchview_layout, this);
         mBackgroundDrawable = new ColorDrawable(Color.BLACK);
 
         mQuerySection = (CardView) findViewById(R.id.search_query_section);

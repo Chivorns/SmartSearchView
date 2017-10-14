@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">FloatingSearchView</string>
+    <string name="app_name">SmartSearchView</string>
     <string name="action_voice_rec">action voice rec</string>
     <string name="action_location">action location</string>
     <string name="action_taxi">action taxi</string>
